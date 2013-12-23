@@ -38,7 +38,9 @@ gem 'devise',  github: 'plataformatec/devise'
 gem 'activeadmin', github: 'gregbell/active_admin' #:ref=> 'fe7d6a6e1bafc9e9dd765dfb3a09245ccd0b3cfd'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 
-# Use ActiveModel has_secure_password
+# Slugification
+
+gem 'friendly_id', '~> 5.0.0'
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
