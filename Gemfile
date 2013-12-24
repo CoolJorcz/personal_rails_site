@@ -46,6 +46,8 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
 
+# Implementing bootstrap
+gem 'bootstrap-sass'
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
