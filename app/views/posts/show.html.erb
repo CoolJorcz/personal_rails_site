@@ -1,7 +1,15 @@
+<% meta :title => @post.title,
+				:description => @post.blurb,
+				:keywords => %w(rails ruby on rails Rails) 
+%>
+
 <p>
 	<strong>Title:</strong> <%= @post.title %>
 </p>
 
+<p>
+	<%= image_tag @post.image_url.to_s %>
+</p>
 <p>
 	<%= @post.content %>
 </p>

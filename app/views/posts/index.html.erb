@@ -1,4 +1,9 @@
+<% meta :title => "Andrew Jorczak",
+				:description => "Andrew Jorczak's personal site",
+				:keywords => %w(rails ruby on rails Rails) 
+%>
+
 <h1>Posts#index</h1>
 <% @posts.each do |post| %>
-	<%= post.title %> - <%= link_to 'Read Post', post %> <br>
+	<%= image_tag post.image_url(:thumb).to_s %> - <%= post.title %> - <%= link_to 'Read Post', post %> <br>
 <% end %>
