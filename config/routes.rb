@@ -12,4 +12,8 @@ PersonalRailsSite::Application.routes.draw do
   %w[about contact cv].each do |page|
     get page, controller: 'pages', action: page
   end  
+
+  %w[about portfolio].each do |page|
+    get page, controller: 'pages', action: page
+  end
 end
