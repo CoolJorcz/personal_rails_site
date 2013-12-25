@@ -16,8 +16,13 @@
 		<tr>
 			<td style="width:100px;"> <%= image_tag post.image_url(:thumb).to_s %></td>
 			<td>
-				<strong><%= post.title %></strong><br /> 
-				<%= post.blurb %> <br />
+				<div>
+					<strong><%= post.title %></strong><br /> 
+					<p class='blurb_target'>
+						<a href="#">Show/hide blurb</a>
+					</p>
+				</div>
+				<p class="blurb_content"><%= post.blurb %> <br /></p>
 				<%= link_to 'Read Post', post %> <br>
 			</td>
 		</tr>

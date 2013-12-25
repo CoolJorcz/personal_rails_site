@@ -2,29 +2,3 @@
 				:description => "Andrew Jorczak's personal site",
 				:keywords => %w(rails ruby on rails Rails) 
 %>
-
-
-<h2>Listing pages</h2>
-<table>
-	<thead>
-		<tr>
-			<th>Title</th>
-			<th>Slug</th>
-			<th>Content</th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-		<% @pages.each do |page| %>
-			<tr>
-				<td> <%= page.title %></td>
-				<td> <%= page.slug %></td>
-				<td> <%= page.content %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
-
-<%= link_to "New Page", new_page_path %>

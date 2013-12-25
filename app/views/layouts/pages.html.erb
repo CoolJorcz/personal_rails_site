@@ -4,6 +4,7 @@
 <%= metamagic title: "Andrew Jorczak, Web Developer, Actor", 
 							description: "Personal Website for Andrew Jorczak",
 							keywords: %w(chicago actor ruby rails javascript jquery) %>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
   <%= stylesheet_link_tag    "pages", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -19,6 +20,7 @@
           <ul class="nav navbar-nav">
             <%= nav_link 'Home', root_path %>
             <%= nav_link 'About', about_path %>
+            <%= nav_link 'Portfolio', portfolio_path %>
             <%= nav_link 'Blog', posts_path %>
           </ul> 
         </div>

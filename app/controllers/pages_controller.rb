@@ -2,11 +2,14 @@ class PagesController < ApplicationController
 	before_action :set_page, only: [:show, :edit, :update, :destroy]
 
   def index
-  	@pages = Page.all
+  	@pages = Page.find(2)
   end
 
   def about
-    @page = Page.where(slug: 'hey-about').first
+    @page = Page.find(3)
+  end
+
+  def contact
   end
 
   def create
@@ -19,6 +22,9 @@ class PagesController < ApplicationController
   	@page = Page.new
   end
 
+  def portfolio
+  end
+  
   def show
   end
 
