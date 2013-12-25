@@ -2,11 +2,11 @@ class PagesController < ApplicationController
 	before_action :set_page, only: [:show, :edit, :update, :destroy]
 
   def index
-  	@pages = Page.find(2)
+  	@pages = Page.find(1)
   end
 
   def about
-    @page = Page.find(3)
+    @page = Page.find(2)
   end
 
   def contact
